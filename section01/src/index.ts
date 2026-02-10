@@ -1,2 +1,1 @@
-console.log("Hello, World!");
-const a: number = 5;
+const a = 1;

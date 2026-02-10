@@ -1,0 +1,24 @@
+/**
+	타입스크립트 tsconfig파일 생성 명령어  순서
+	npm --init
+	npm i @types/node
+
+*/
+
+{
+	//컴파일할 범위 설정
+	"include": ["src"],
+	//컴파일해서 만들어지는 자바스크립트 버전 설정
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "commonjs",
+		/* 컴파일 결과 자바스크립트 파일 생성 경로 설정*/
+		"outDir": "./dist",
+		"strict": true,
+		"skipLibCheck": true,
+		"moduleDetection": "force"
+	},
+	"ts-node": {
+		"esm": true
+	}
+}

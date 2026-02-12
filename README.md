@@ -1,6 +1,9 @@
 # 📘 TypeScript Project Quick Start Guide
 
 이 가이드는 타입스크립트 프로젝트의 초기 설정부터 컴파일, 주요 설정값까지 한 번에 파악하기 위해 작성함
+타입스크립트는 점진적 타입시스템을 채택하고있음, 점진적타입이란건 변수를 선언할때 변수에 타입이 정의를 하지않고,
+초기값을 넣어주면 알아서 타입스크립트가 초기값을 기준으로 변수의 타입을 추론한다.
+예외론 함수에 매개변수에 타입을 지정하지않으면, 타입스크립트는 추론이 불가하여 오류가 발생할 확률이 높다.
 
 ## 1. 프로젝트 초기 설정 (Setup)
 
@@ -16,7 +19,6 @@ npm init -y
 
 # 3. TypeScript 설치 (개발용 의존성)
 npm i @types/node
-
 
 # 4. TypeScript 설정 파일(tsconfig.json) 생성
 npx tsc --init
@@ -145,13 +147,6 @@ npx tsx .\src\chapter5.ts  <- 예제파일 경로
   "ts-node": {
     "esm": true
   }
-}
-
-
-"scripts": {
-  "build": "tsc",
-  "start": "node dist/index.js",
-  "watch": "tsc -w"
 }
 
 ```

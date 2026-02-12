@@ -11,8 +11,9 @@
 	//컴파일해서 만들어지는 자바스크립트 버전 설정
 	"compilerOptions": {
 		"target": "esnext",
-		"module": "commonjs",
+		"module": "esnext",
 		/* 컴파일 결과 자바스크립트 파일 생성 경로 설정*/
+		"rootDir": "./src",
 		"outDir": "./dist",
 		"strict": true,
 		"skipLibCheck": true,

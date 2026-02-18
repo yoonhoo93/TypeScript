@@ -150,3 +150,6 @@ npx tsx .\src\chapter5.ts  <- 예제파일 경로
 }
 
 ```
+
+
+## 2. 문법확인 section03 폴더 확인

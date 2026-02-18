@@ -28,3 +28,18 @@ let dog = {
 } as Dog;
 
 let num1 = 10 as never;
+
+
+/* non null 단언 */
+
+type Post = {
+	title: string,
+	author?: string,
+}
+
+let post: Post = {
+	title: "1",
+	author: "조윤후"
+}
+
+let len = post.author?.length

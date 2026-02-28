@@ -26,6 +26,9 @@ npx tsc --init
 # 5. 컴파일 없이 터미널에서 값 확인
 npx tsx .\src\chapter5.ts  <- 예제파일 경로
 
+#6. tsFile 컴파일명령어
+npx tsc
+
 # 6. Node.js 환경에서 ES 모듈(import/export)을 사용하기 위해서는 package.json에 반드시 아래 항목을 추가해야 함
 {
   "name": "my-modern-ts",
@@ -35,7 +38,6 @@ npx tsx .\src\chapter5.ts  <- 예제파일 경로
     "build": "tsc",
     "start": "node dist/index.js",
     "watch": "tsc -w"
-}
 }
 
 {
@@ -150,6 +152,5 @@ npx tsx .\src\chapter5.ts  <- 예제파일 경로
 }
 
 ```
-
 
 ## 2. 문법확인 section03 폴더 확인
